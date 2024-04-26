@@ -1,0 +1,33 @@
+/* Déclaration des variables global*/
+:root {
+    /*Font general variabless*/
+
+    --fs-body: 24px;
+    --fs-heading: 48px;
+    --fs-header: 16px;
+    --ff-body: 'Barlow', sans-serif;
+    --ff-heading: 'Barlow', serif;
+
+    /*Color general variables*/
+
+    --primary-color: rgb(70, 195, 198);
+    --button-primary-color: var(--primary-color);
+    --secondary-color: rgba(25, 71, 71, 0.801);
+    --button-secondary-color: var(--secondary-color);
+
+    --text-color: rgb(12, 32, 35);
+    --text-color-secondary: rgb(217, 223, 224);
+
+    /*Header color variables*/
+
+    --nav-text-color: #fff;
+    --nav-hover-text-color: var(--button-primary-color);
+    --header-bg-gradient: linear-gradient(
+        141deg,
+        #145f9dcb 0,
+        #145f9dc6 21%,
+        #06091ac3 52%
+    );
+    --header-bg-color: var(--header-bg-gradient); /* rgba(27, 36, 47, 0.99);*/
+    --header-bg-secondary-color: #2ecc71;
+}
