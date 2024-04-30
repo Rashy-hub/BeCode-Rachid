@@ -9,7 +9,7 @@ mainloop: while (userInput != 'quit') {
             break
         case 'list':
             alert(`********* TODO LIST *********\n${todos.forEach((element, index) => `${index + 1}.${element}`)}`)
-            todos.forEach((element, index) => console.log(`${index + 1}.${element}`))
+
             break
         case 'delete':
             todos = todos.splice(prompt('At what position you want to delete todo ?'), 1)
@@ -18,7 +18,7 @@ mainloop: while (userInput != 'quit') {
             break mainloop
 
         default:
-            userInput = prompt("Enter your command 'new'|'list'|'delete'|'quit'")
+            userInput = prompt("Command not correct => 'new'|'list'|'delete'|'quit'")
             break
     }
     userInput = prompt("Enter your command 'new'|'list'|'delete'|'quit'")
