@@ -3,5 +3,4 @@
 function minMax(myArray) {
     return [Math.min(...myArray), Math.max(...myArray)]
 }
-
-console.log(minMax([2, 9, 6, 1, 4]))
+console.log(minMax([1, 2, 3, 4, 5])) //➞ [1, 5]
