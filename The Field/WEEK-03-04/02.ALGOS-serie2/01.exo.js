@@ -1,5 +1,5 @@
 function possibleBonus(initialPosition, friendPosition) {
-    return friendPosition - 6 <= initialPosition && !friendPosition < initialPosition ? true : false
+    return friendPosition - 6 <= initialPosition && !friendPosition < initialPosition
 }
 
 console.log(possibleBonus(3, 7)) //➞ true
