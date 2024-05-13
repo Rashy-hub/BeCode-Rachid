@@ -1,0 +1,24 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Reset the root element - very useful for responsive design*/
+html {
+    font-size: 30px;
+}
+.blabla {
+    background: pink;
+    min-height: 50vh;
+    max-height: 75vh;
+    overflow: hidden;
+}
+.i-am-the-boss {
+    background: cyan;
+}
+
+.i-am-the-boss > p {
+    padding: 16px;
+    font-size: 1.2rem;
+}
