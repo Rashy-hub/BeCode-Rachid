@@ -1,6 +1,6 @@
 -   [Box Text Hover](https://rashy-hub.github.io/MyPages/boxTextHover)
 -   [FlexBox](https://rashy-hub.github.io/MyPages/FlexBox)
--   [GridPainting](https://rashy-hub.github.io/MyPages/Grid+Mondrian+painting)
+-   [GridPainting](https://rashy-hub.github.io/MyPages/Grid%20Mondrian%20painting)
 -   [Pixel Perfect](https://rashy-hub.github.io/MyPages/PixelPerfect)
 -   [Selectors and Colors](https://rashy-hub.github.io/MyPages/selectorsAndColors)
 -   [Units and sizes](https://rashy-hub.github.io/MyPages/UnitsAndSizes)
