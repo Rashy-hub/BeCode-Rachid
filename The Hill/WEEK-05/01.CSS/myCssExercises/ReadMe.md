@@ -4,4 +4,4 @@
 -   [Pixel Perfect](https://rashy-hub.github.io/MyPages/PixelPerfect)
 -   [Selectors and Colors](https://rashy-hub.github.io/MyPages/selectorsAndColors)
 -   [Units and sizes](https://rashy-hub.github.io/MyPages/UnitsAndSizes)
--   [Ipsum news Webpage](https://rashy-hub.github.io/Ipsum%20News)
+-   [Ipsum news Webpage](https://rashy-hub.github.io/MyPages/Ipsum%20News)
