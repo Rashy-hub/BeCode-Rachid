@@ -4,35 +4,41 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <header class="flex_container">
-            <div class="logo"></div>
-            <nav>
-                <ul class="flex_container">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="logo"><img src="./Assets/LogoIpsum.png" alt="logo principale" width="151px" height="30px" /></div>
+            <nav class="flex_container">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Articles</a>
+                <a href="#">Contact</a>
             </nav>
         </header>
         <main>
             <section class="hero">
                 <div class="grid_container grid_hero">
-                    <div class="presentation_cta"></div>
-                    <div class="mark_image"></div>
+                    <div class="presentation_cta flex_container">
+                        <h1>IPSUM <span>NEWS</span> !</h1>
+                        <h2>Your place to go to get informed</h2>
+                        <div class="bar"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe optio ea sapiente quas, placeat, minus consequatur eos veritatis numquam aliquid consequuntur modi eveniet perspiciatis!</p>
+                        <button class="button_cta">Know More</button>
+                    </div>
+                    <div class="mark_image"><img src="./Assets/hero_photo.png" alt="hero-image" /></div>
                 </div>
             </section>
             <section class="news">
                 <h2>Latest news</h2>
+                <div class="bar"></div>
                 <div class="grid_container grid_news">
-                    <div class="news_image"></div>
-                    <div class="news_image"></div>
-                    <div class="news_image"></div>
-                    <div class="news_image"></div>
-                    <div class="news_image"></div>
+                    <div class="news_image"><img src="./Assets/hacker-lunette.png" alt="hackerlunette" width="387px" height="559px" /></div>
+                    <div class="news_image"><img src="./Assets/codeur-chemisecarreau.jpg" alt="codeur avec chemise à carreau image" width="386px" height="269px" /></div>
+                    <div class="news_image"><img src="./Assets/pistes-electroniques.jpg" alt="piste-electroniques image" width="386px" height="269px" /></div>
+                    <div class="news_image"><img src="./Assets/microprocesseur.jpg" alt="microprocesseure image" width="386px" height="269px" /></div>
+                    <div class="news_image"><img src="./Assets/costard-hacker.jpg" alt="costard hacker image" width="386px" height="269px" /></div>
                 </div>
             </section>
         </main>
