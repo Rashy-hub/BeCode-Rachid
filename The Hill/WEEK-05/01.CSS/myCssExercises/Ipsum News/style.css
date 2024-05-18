@@ -47,7 +47,10 @@ header {
     padding: 17px 120px;
 
     background: #3a3d46;
-    box-shadow: 0px 4px 4px 0px #00000040;
+    /*Generated from tools online */
+    box-shadow: 0px 15px 13px -10px rgba(1, 135, 95, 1);
+    -webkit-box-shadow: 0px 15px 13px -10px rgba(1, 135, 95, 1);
+    -moz-box-shadow: 0px 15px 13px -10px rgba(1, 135, 95, 1);
 }
 nav {
     gap: 40px;
@@ -67,6 +70,12 @@ nav a {
     color: white;
     text-transform: uppercase;
 }
+.active_nav {
+    background: #007dfc;
+    padding: 6px;
+    border-radius: 3px;
+}
+
 /*Hero Section*/
 .hero {
     background: rgb(35, 35, 35);
@@ -99,14 +108,14 @@ nav a {
 }
 .presentation_cta h2 {
     font-size: 26px;
-
+    text-transform: capitalize;
     line-height: 26px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
     text-align: left;
     color: #007dfc;
 }
 .bar {
-    width: 100%;
+    width: 80%;
     height: 2px;
     background: gray;
 }
@@ -117,6 +126,7 @@ nav a {
     line-height: 20.88px;
     letter-spacing: 0.02em;
     text-align: left;
+    width: 60%;
 }
 .mark_image {
     place-self: center;
@@ -128,6 +138,9 @@ nav a {
     height: 100%;
 }
 .button_cta {
+    background: #ffb800;
+    outline: none;
+    border: none;
     white-space: nowrap;
     width: fit-content;
     padding: 10px 27px 10px 27px;
