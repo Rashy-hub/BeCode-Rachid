@@ -15,13 +15,17 @@ img {
     width: 100%;
     height: 100%;
 }
-/*Mobile First*/
+/*Mobile First CSS styles*/
+
+/*General style*/
 .container {
     margin: 0 auto;
     padding: 16px;
-    /*LabTop max-width*/
+
     max-width: 100vw;
 }
+
+/*Header section style*/
 header {
     display: flex;
     flex-direction: row;
