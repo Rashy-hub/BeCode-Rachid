@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(236.56deg, #2c2d65 0.35%, #201f22 100%);
+}
+
+.container {
+  margin: auto;
+  height: 100vh;
+  max-width: 1440px;
+  background: url("../../figma-assets/deco1.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: 719px -112px, left;
+}
