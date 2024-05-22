@@ -255,6 +255,7 @@ main {
     }
     .banner > img {
         object-fit: cover;
+        object-position: 0% 0%;
     }
     .news_aside {
         padding: 25px;
