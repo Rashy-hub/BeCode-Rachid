@@ -39,6 +39,9 @@ header {
     font-size: 40px;
     font-weight: 900;
 }
+nav {
+    display: none;
+}
 
 .hamburger_menu {
     display: flex; /* Enable flexbox */
@@ -46,10 +49,6 @@ header {
     align-items: center; /* Center content vertically */
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
-}
-
-nav {
-    display: none; /*In mobile view the nav bar is not displayed*/
 }
 
 /*Main section*/
@@ -64,10 +63,12 @@ main {
 }
 
 .article_title > h1 {
+    color: rgba(0, 0, 26, 1);
+
     font-family: 'Inter';
-    font-size: 40px;
+    font-size: 56px;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 56px;
     text-align: left;
 }
 .introduction {
@@ -162,11 +163,14 @@ main {
     width: 100%;
 }
 .trend_image > img {
-    object-fit: fill;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 .trend_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     grid-column: 2 / span 2;
 }
 
@@ -197,4 +201,65 @@ main {
     font-weight: 400;
     line-height: 26px;
     text-align: left;
+}
+
+/*Common style above 768px*/
+@media (min-width: 768px) {
+    nav {
+        display: flex; /*In mobile view the nav bar is not displayed*/
+        gap: 20px;
+    }
+    nav a {
+        color: rgba(94, 96, 122, 1);
+        text-decoration: none;
+        font-family: 'Inter';
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+    }
+    .hamburger_menu {
+        display: none;
+    }
+
+    .main_article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner {
+        grid-column: 1 / span 2;
+    }
+}
+
+/*Specific From 768px small tablet to small labtop*/
+
+@media (min-width: 768px) and (max-width: 1109px) {
+}
+
+/*Common Style above 1110px*/
+@media (min-width: 1110px) {
+    .container {
+        max-width: 1110px;
+    }
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2rem !important;
+    }
+    .main_article {
+        margin-top: 32px;
+        grid-template-rows: 300px 1fr;
+        grid-column: 1 / span 2;
+    }
+    .banner {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+    .banner > img {
+        object-fit: cover;
+    }
+    .news_aside {
+        padding: 25px;
+    }
+    .trend_container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
