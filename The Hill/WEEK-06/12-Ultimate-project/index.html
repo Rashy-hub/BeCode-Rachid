@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sass Ultimate Project</title>
         <link rel="stylesheet" href="dist/css/main-style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
     <body>
-        <div class="container">
-            <header>
-                <div>my<span>logo</span></div>
+        <div class="layout-container">
+            <header class="container">
+                <div class="logo">my<span>logo</span></div>
                 <nav>
                     <a href="#">home.</a>
                     <a href="#">about.</a>
@@ -18,6 +25,122 @@
                     <a href="#">contact.</a>
                 </nav>
             </header>
+            <main class="container">
+                <section>
+                    <h1>Awesome Title</h1>
+                    <h2>Pretty nice subtitle</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Totam voluptate quia mollitia quam similique temporibus
+                        molestiae officiis aut rerum dolorem, exercitationem
+                        repellat.
+                    </p>
+                    <a href="#" class="getstarted_link">Get Started</a>
+                    <a href="">Know More</a>
+                </section>
+                <section>
+                    <div>
+                        <img
+                            src="./figma-assets/first-section-image.png"
+                            alt=""
+                        />
+                    </div>
+                    <div>
+                        <p>Lorem</p>
+                        <h2>Lorem ipsum sec ad no meticulus</h2>
+                        <h3>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Adipisci nulla cupiditate rerum harum.
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Beatae laudantium mollitia delectus, voluptate
+                            nobis perferendis vel atque similique a, vitae ullam
+                            doloribus et ducimus obcaecati voluptatem quia
+                            temporibus consequatur alias?
+                        </p>
+                        <a href="#" class="getstarted_link">Get Started</a>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <p>Ipsum</p>
+                        <h2>Lorem ipsum si amet.</h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Beatae laudantium mollitia delectus, voluptate
+                            nobis perferendis vel atque.
+                        </p>
+                    </div>
+                    <div class="cards_container">
+                        <div class="card">
+                            <img src="./figma-assets/Bitmap-1.png" alt="" />
+                            <div class="card_intro">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                                <time>27 Nov, 2020</time>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./figma-assets/Bitmap-2.png" alt="" />
+                            <div class="card_intro">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                                <time>25 Nov, 2020</time>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./figma-assets/Bitmap.png" alt="" />
+                            <div class="card_intro">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit.
+                                </p>
+                                <time>21 Nov, 2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="container">
+                <div class="logo">my<span>logo</span></div>
+                <div class="list_footer">
+                    <p>Menu</p>
+                    <ul>
+                        <li>Lorem</li>
+                        <li>Ipsum</li>
+                        <li>Sidarta</li>
+                        <li>Emmet</li>
+                        <li>Lanis</li>
+                    </ul>
+                </div>
+                <div class="list_footer">
+                    <p>Menu</p>
+                    <ul>
+                        <li>Market Research</li>
+                        <li>Branding</li>
+                        <li>Strategy</li>
+                        <li>Concepting</li>
+                        <li>Development</li>
+                    </ul>
+                </div>
+                <div class="list_footer"><p>Service</p></div>
+                <div class="social_container">
+                    <div class="social_circle">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="social_circle">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="social_circle">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

@@ -1,5 +1,7 @@
 @use './variables';
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -10,16 +12,23 @@
 
 body {
     width: 100vw;
-    height: 100vh;
+
     background: linear-gradient(236.56deg, #2c2d65 0.35%, #201f22 100%);
 }
 
-.container {
+.layout-container {
     margin: auto;
-    height: 100vh;
 
     max-width: variables.$container-max-width;
-    background: url('../../figma-assets/deco1.png');
-    background-repeat: no-repeat no-repeat;
-    background-position: 719px -112px, left;
+    //background: url('../../figma-assets/deco1.png');
+    //background-repeat: no-repeat no-repeat;
+    // background-position: 719px -112px, left;
+}
+
+.mylogo {
+    font-family: 'Barlow';
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    text-align: left;
 }
