@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+:root {
+    --scoreResult-player1-Content: "0";
+    --scoreResult-player2-Content: "0";
+    --scoreResult-player1-Color: #000;
+    --scoreResult-player2-Color: #000;
+}
+h1 {
+    text-align: center;
+    margin: 2rem;
+    text-transform: uppercase;
+}
+.scoreresult {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: large;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.buttonzone {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    border: 2px darkblue dashed;
+}
+
+.buttonzone button {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+    font-size: large;
+    border: 2px darkblue dashed;
+    margin: 1rem;
+    width: 40%;
+    height: 60px;
+    border-radius: 2rem;
+    background: rgb(96, 205, 255);
+}
+
+.buttonzone button:hover {
+    background: rgba(96, 205, 255, 0.664);
+}
+.scoreresult::after {
+    margin-left: 1rem;
+    content: var(--scoreResult-player1-Content);
+    color: var(--scoreResult-player1-Color);
+}
+.scoreresult::before {
+    margin-right: 1rem;
+    content: var(--scoreResult-player2-Content);
+    color: var(--scoreResult-player2-Color);
+}
