@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+/*Error and Success utility class*/
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+/* Style the signup form container */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 400px;
+
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+/* Style the form heading */
+.signup-form h2 {
+    font-family: "Poetsen";
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Style the paragraphs msg*/
+
+.signup-form .msg {
+    display: none;
+}
+/* Style the form labels */
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the form input fields */
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.button_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3rem;
+}
+/* Style the submit button */
+.signup-form button[type="submit"] {
+    font-family: "Poetsen";
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 40%;
+    background-color: #4caf50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.signup-form button[type="reset"] {
+    font-family: "Poetsen";
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 40%;
+    background-color: #f30d0d; /* Green */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* Add hover effect to submit button */
+.signup-form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.signup-form button[type="reset"]:hover {
+    background-color: #f30d0dc2;
+}
