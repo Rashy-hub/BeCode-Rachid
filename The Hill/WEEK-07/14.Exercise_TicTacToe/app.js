@@ -16,22 +16,6 @@ let currentChoice = "X"
 let isFinised = false
 let nextTurn = 1
 
-/*Create 9 divs inside board with the class cell
-In your css, make sure board and cells look like the game grid
-We are going to use the strategy of putting the letters x and o inside the divs in order to play the game. (you can do it differently, but you will have to adapt your js)
-
-In your js, you can start defining all the winning combinations with an array of arrays : */
-/*You will need an array of 9 entries playedCells to hold the choices of the players. (you can start with empty strings, and then it will be filled with x and o)
-
-Keep track of the current player (in a variable) and assign it to x or o
-
-Keep track if the game is running or over
-
-In the initialization of the game, add an event listener to each cell.
-
-When a cell is clicked, fill the playedCells with the current player in the correct position
-
-Check if there is a win comparing the winCombinations array to the playedCells */
 const board = document.querySelector(".board")
 const message = document.querySelector(".message")
 console.log(board)
