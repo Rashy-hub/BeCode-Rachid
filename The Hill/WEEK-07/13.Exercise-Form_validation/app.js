@@ -31,7 +31,6 @@ myForm.onsubmit = (event) => {
 
 myForm.onreset = (event) => {
     refreshFieldsStyle()
-
     console.log("reset event fired")
 }
 
