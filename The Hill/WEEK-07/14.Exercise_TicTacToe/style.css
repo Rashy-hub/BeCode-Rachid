@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1 {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Change font if desired */
+    font-size: 3em; /* Adjust font size */
+    font-weight: bold;
+    text-align: center; /* Center the title horizontally */
+    color: #333; /* Text color */
+}
+/* Board container */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+/* Individual cells */
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: lightgray; /* Change background on hover */
+}
+
+.cell.X {
+    color: red; /* Color for X marker */
+}
+
+.cell.O {
+    color: blue; /* Color for O marker */
+}
+
+.message {
+    display: none;
+    text-align: center;
+}
+.message.show {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+.restart {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #ccc; /* Change border color */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer; /* Indicate clickable behavior */
+    background-color: #eee; /* Change background color */
+    color: #333; /* Change text color */
+    font-size: large;
+    font-weight: 600;
+}
+
+.restart:hover {
+    /* Hover effect (optional) */
+    background-color: #ddd;
+}
+
+.restart:active {
+    /* Click effect (optional) */
+    background-color: #ccc;
+}
