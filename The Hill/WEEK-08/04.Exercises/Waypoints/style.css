@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 8rem;
+    font-weight: 600;
+}
+main {
+    padding: 4rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#first-section {
+    height: 200vh;
+    background: red;
+}
+#first-section p {
+    transform: translateY(-500%);
+}
+#second-section {
+    height: 100vh;
+    background: blue;
+}
+
+p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 8rem;
+    font-weight: 600;
+}
