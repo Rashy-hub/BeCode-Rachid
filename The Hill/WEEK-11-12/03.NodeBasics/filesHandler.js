@@ -24,15 +24,6 @@ async function createFile(localPath, data) {
     return `${localPath} successfuly created `
 }
 
-const fileWriteHandler = async (localpath, data) => {
-    try {
-        const message = await createFile(localpath, data)
-        console.log(message)
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 async function readFile(localPath) {
     try {
         if (!fs.existsSync(localPath)) {
@@ -50,11 +41,15 @@ async function readFile(localPath) {
     }
 }
 
-const readFileHandler = async (localPath) => {
+// Remove the file
+async function deleteFileAndParents(filepath) {
     try {
-        const dataString = await readFile(localPath)
-        console.log(dataString)
-    } catch (error) {}
+        await fs.promises.unlink(filepath) // Delete the file
+
+        //here we should also delete folder
+    } catch (err) {
+        throw new Error(`Failed to delete file or parent directories: ${filepath}`, err) // Re-throw with formatted message
+    }
 }
 
-module.exports = { fileWriteHandler, readFileHandler }
+module.exports = { readFile, deleteFileAndParents, createFile }
