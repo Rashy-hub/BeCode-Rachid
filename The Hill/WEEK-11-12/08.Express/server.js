@@ -6,7 +6,7 @@ const port = 3000
 
 const viewsDir = path.join(__dirname, "views")
 
-app.use(express.static("views"))
+app.use(express.static("views", { extensions: ["html"] }))
 
 // Route for POST request
 app.post("/", (req, res) => {
@@ -17,6 +17,10 @@ app.post("/", (req, res) => {
     res.json(data)
 })
 
+app.get("/about-us", (req, res) => {
+    console.log(req.url)
+    res.redirect("/about")
+})
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, "./views/404.html"))
 })
