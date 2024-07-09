@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', { title: "Home Page" }) %>
+    <body>
+        <h1>This is my Home page</h1>
+        <% let index = 1 ;data.forEach(element => { %>
+        <h2>User <%= index %></h2>
+        <p>First Name : <%= element.firstName %></p>
+        <p>Last Name : <%= element.lastName %></p>
+        <hr />
+        <br />
+        <% index ++ }) %>
+        <a href="http://localhost:3000/add">Add user</a>
+    </body>
+</html>
