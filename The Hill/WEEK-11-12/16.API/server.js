@@ -23,11 +23,6 @@ registratedRoutes.push(usersCrud.getRouter())
 app.use("/api", ...registratedRoutes)
 
 app.use("*", extractRoutes, (req, res) => {
-    /*   const extractedPaths = []
-    registratedRoutes.forEach((crudRoute) => {
-        extractedPaths.push(...extractPaths(crudRoute.stack))
-    })
- */
     const errorMessage = "Page not found. Available routes:"
     const responseBody = {
         error: errorMessage,
