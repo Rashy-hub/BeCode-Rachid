@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(requestLogger)
 
 //this way you can create classic CRUD defaults routes for any ressources you want
-const usersCrud = new CrudRouter("users", userController, userBodyValidator)
+const usersCrud = new CrudRouter("users", userController, { bodyValidator: userBodyValidator })
 
 //those routes will  be displayed in public when 404 error
 registratedRoutes.push(usersCrud.getRouter())

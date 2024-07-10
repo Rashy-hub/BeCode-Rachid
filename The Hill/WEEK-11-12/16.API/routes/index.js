@@ -1,10 +1,10 @@
 const bodyValidation = require("../middlewares/bodyValidation")
 
 class CrudRouter {
-    constructor(baseRoute, crudController, bodyValidator) {
+    constructor(baseRoute, crudController, validators) {
         this.baseRoute = baseRoute
         this.crudController = crudController
-        this.bodyValidator = bodyValidator
+        this.validators = validators
         this.router = require("express").Router()
 
         // Register default methods with the router
@@ -15,7 +15,7 @@ class CrudRouter {
     registerRoutes() {
         this.router.get(`/${this.baseRoute}`, this.crudController.getAll)
         this.router.get(`/${this.baseRoute}/:id`, this.crudController.getById)
-        this.router.post(`/${this.baseRoute}`, bodyValidation(this.bodyValidator), this.crudController.create)
+        this.router.post(`/${this.baseRoute}`, bodyValidation(this.validators.bodyValidator), this.crudController.create)
         this.router.put(`/${this.baseRoute}/:id`, this.crudController.update)
         this.router.delete(`/${this.baseRoute}/:id`, this.crudController.delete)
     }
