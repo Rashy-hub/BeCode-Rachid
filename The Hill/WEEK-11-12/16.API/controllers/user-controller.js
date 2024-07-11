@@ -14,7 +14,7 @@ const userController = {
     update: async (req, res) => {
         const resourceId = req.params.id
         const updatedResource = req.body
-        res.send(`This is a PUT request to update user with ID: ${resourceId} updated with ${updatedResource}`)
+        res.send(`This is a PUT request to update user with ID: ${resourceId} updated with ${JSON.stringify(updatedResource, null, 2)}`)
     },
     delete: async (req, res) => {
         const resourceId = req.params.id

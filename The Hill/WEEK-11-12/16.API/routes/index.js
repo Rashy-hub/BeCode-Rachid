@@ -1,4 +1,5 @@
 const bodyValidation = require("../middlewares/bodyValidation")
+const apiKeyMiddleware = require("../middlewares/apiKeyMiddleware.js")
 
 class CrudRouter {
     constructor(baseRoute, crudController, validators) {
@@ -15,9 +16,9 @@ class CrudRouter {
     registerRoutes() {
         this.router.get(`/${this.baseRoute}`, this.crudController.getAll)
         this.router.get(`/${this.baseRoute}/:id`, this.crudController.getById)
-        this.router.post(`/${this.baseRoute}`, bodyValidation(this.validators.bodyValidator), this.crudController.create)
-        this.router.put(`/${this.baseRoute}/:id`, this.crudController.update)
-        this.router.delete(`/${this.baseRoute}/:id`, this.crudController.delete)
+        this.router.post(`/${this.baseRoute}`, apiKeyMiddleware(), bodyValidation(this.validators.bodyValidator), this.crudController.create)
+        this.router.put(`/${this.baseRoute}/:id`, apiKeyMiddleware(), this.crudController.update)
+        this.router.delete(`/${this.baseRoute}/:id`, apiKeyMiddleware(), this.crudController.delete)
     }
 
     // Get the Express router instance
