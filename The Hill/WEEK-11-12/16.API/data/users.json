@@ -1,0 +1,18 @@
+[
+  {
+    "id": "KUGF-57JNJ-JFNJDK-OUH3",
+    "username": "Glouglou43",
+    "firstName": "Henrique",
+    "lastName": "Vieira",
+    "age": 35,
+    "isAdmin": true
+  },
+  {
+    "id": "ANOTHER-ID",
+    "username": "NewUser",
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 25,
+    "isAdmin": false
+  }
+]
