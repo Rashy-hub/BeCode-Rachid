@@ -17,7 +17,7 @@ class CrudRouter {
         this.router.get(`/${this.baseRoute}`, this.crudController.getAll)
         this.router.get(`/${this.baseRoute}/:id`, this.crudController.getById)
         this.router.post(`/${this.baseRoute}`, apiKeyMiddleware(), bodyValidation(this.validators.bodyValidator), this.crudController.create)
-        this.router.put(`/${this.baseRoute}/:id`, apiKeyMiddleware(), this.crudController.update)
+        this.router.put(`/${this.baseRoute}/:id`, apiKeyMiddleware(), bodyValidation(this.validators.bodyValidator), this.crudController.update)
         this.router.delete(`/${this.baseRoute}/:id`, apiKeyMiddleware(), this.crudController.delete)
     }
 

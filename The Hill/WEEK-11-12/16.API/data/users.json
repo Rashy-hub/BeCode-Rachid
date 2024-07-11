@@ -1,18 +1,19 @@
 [
-  {
-    "id": "KUGF-57JNJ-JFNJDK-OUH3",
-    "username": "Glouglou43",
-    "firstName": "Henrique",
-    "lastName": "Vieira",
-    "age": 35,
-    "isAdmin": true
-  },
-  {
-    "id": "ANOTHER-ID",
-    "username": "NewUser",
-    "firstName": "John",
-    "lastName": "Doe",
-    "age": 25,
-    "isAdmin": false
-  }
+    {
+        "id": "KUGF-57JNJ-JFNJDK-OUH3",
+        "username": "Glouglou43",
+        "firstName": "Henrique",
+        "lastName": "Vieira",
+        "age": 35,
+        "isAdmin": true
+    },
+
+    {
+        "id": "811ab9a0-6548-4c58-b084-2463f6c29e0f",
+        "username": "Glouglou43",
+        "firstName": "Henrique",
+        "lastName": "Vieira",
+        "age": 35,
+        "isAdmin": true
+    }
 ]
